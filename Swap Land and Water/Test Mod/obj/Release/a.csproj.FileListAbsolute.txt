@@ -1,0 +1,154 @@
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\a.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\a.pdb
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Assembly-CSharp.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2Cppmscorlib.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\MelonLoader.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnhollowerBaseLib.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.CoreModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.UI.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.AnimationModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Unity.TextMeshPro.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.Purchasing.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\NinjaKiwi.Common.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.AudioModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\NinjaKiwi.LiNK.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Unity.InputSystem.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.ParticleSystemModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppSystem.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.InputLegacyModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.PhysicsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.TextRenderingModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Unity.ResourceManager.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Unity.Addressables.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Facepunch.Steamworks.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.IMGUIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppSystem.Core.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Assembly-CSharp-firstpass.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Twitch.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.Purchasing.Stores.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.VideoModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.UIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Iced.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.SharedInternalsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.Physics2DModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.TextCoreModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.UnityWebRequestModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.InputModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.XRModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppMono.Security.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppSystem.Configuration.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppSystem.Xml.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.AssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityStore.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Il2CppSystem.Net.Http.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.AndroidJNIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\Purchasing.Common.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\bin\Release\UnityEngine.SubsystemsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\obj\Release\a.csproj.CoreCompileInputs.cache
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\obj\Release\a.csproj.CopyComplete
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\obj\Release\a.dll
+D:\Documents\Btd6 Mods\Mod Projects\Test Mod\Test Mod\obj\Release\a.pdb
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Assembly-CSharp.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2Cppmscorlib.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\MelonLoader.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnhollowerBaseLib.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.CoreModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UI.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AnimationModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Unity.TextMeshPro.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Purchasing.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\NinjaKiwi.Common.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AudioModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\NinjaKiwi.LiNK.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Unity.InputSystem.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.ParticleSystemModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.InputLegacyModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.PhysicsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.TextRenderingModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Unity.ResourceManager.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Unity.Addressables.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Facepunch.Steamworks.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.IMGUIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Core.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Assembly-CSharp-firstpass.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Twitch.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Purchasing.Stores.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.VideoModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Iced.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.SharedInternalsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Physics2DModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.TextCoreModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UnityWebRequestModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.InputModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.XRModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppMono.Security.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Configuration.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Xml.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityStore.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Net.Http.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AndroidJNIModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\Purchasing.Common.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\UnityEngine.SubsystemsModule.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\obj\Release\a.csproj.CoreCompileInputs.cache
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\obj\Release\a.csproj.CopyComplete
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\SwapLandAndWater.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\bin\Release\SwapLandAndWater.pdb
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\obj\Release\SwapLandAndWater.dll
+D:\Documents\Btd6 Mods\Mod Projects\Swap Land and Water\Test Mod\obj\Release\SwapLandAndWater.pdb
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\SwapLandAndWater.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\SwapLandAndWater.pdb
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Assembly-CSharp.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2Cppmscorlib.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\MelonLoader.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnhollowerBaseLib.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.CoreModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UI.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AnimationModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Unity.TextMeshPro.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Purchasing.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\NinjaKiwi.Common.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AudioModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\NinjaKiwi.LiNK.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Unity.InputSystem.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.ParticleSystemModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.InputLegacyModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.PhysicsModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.TextRenderingModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Unity.ResourceManager.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Unity.Addressables.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Facepunch.Steamworks.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.IMGUIModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Core.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Assembly-CSharp-firstpass.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Twitch.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Purchasing.Stores.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.VideoModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UIModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Iced.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.SharedInternalsModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.Physics2DModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.TextCoreModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UnityWebRequestModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.InputModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.XRModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppMono.Security.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Configuration.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Xml.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.UnityWebRequestAssetBundleModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityStore.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Il2CppSystem.Net.Http.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.AndroidJNIModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\Purchasing.Common.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\bin\Release\UnityEngine.SubsystemsModule.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\obj\Release\a.csproj.AssemblyReference.cache
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\obj\Release\a.csproj.CoreCompileInputs.cache
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\obj\Release\a.csproj.CopyComplete
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\obj\Release\SwapLandAndWater.dll
+D:\Documents\Btd6 Mods\Mod Code\Swap Land and Water\Test Mod\obj\Release\SwapLandAndWater.pdb
