@@ -1,7 +1,0 @@
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\bin\Debug\The Corner.dll
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\bin\Debug\The Corner.pdb
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\obj\Debug\TheCorner.Properties.Resources.resources
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\obj\Debug\The Corner.csproj.GenerateResource.cache
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\obj\Debug\The Corner.csproj.CoreCompileInputs.cache
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\obj\Debug\The Corner.dll
-D:\Games\Btd6 Mods\Mod Projects\The Corner\The Corner\obj\Debug\The Corner.pdb
