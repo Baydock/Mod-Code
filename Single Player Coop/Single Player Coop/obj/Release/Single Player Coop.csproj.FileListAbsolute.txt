@@ -1,0 +1,14 @@
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\bin\Release\Single Player Coop.dll
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\bin\Release\Single Player Coop.pdb
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.csprojAssemblyReference.cache
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.csproj.CoreCompileInputs.cache
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.dll
+D:\Documents\Btd6 Mods\Mod Projects\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.pdb
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.csproj.AssemblyReference.cache
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.csproj.CoreCompileInputs.cache
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.dll
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.pdb
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\bin\Release\Single Player Coop.dll
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\bin\Release\Single Player Coop.pdb
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\bin\Release\MelonLoader.dll
+D:\Documents\Btd6 Mods\Mod Code\Single Player Coop\Single Player Coop\obj\Release\Single Player Coop.csproj.CopyComplete
