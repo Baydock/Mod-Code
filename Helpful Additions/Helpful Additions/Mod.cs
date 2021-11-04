@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Additional Sandbox Buttons", "1.0.0", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.0.0", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {
