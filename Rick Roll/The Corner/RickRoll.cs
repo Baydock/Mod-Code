@@ -30,7 +30,7 @@ namespace RickRoll {
     public class Awake_Patch {
         [HarmonyPostfix]
         public static void Postfix(ref Game __instance) {
-            GameData gameData = ScriptableObjectSingleton<GameData>.Instance;
+            GameData gameData = GameData.Instance;
             List<MapDetails> mapDetails = new List<MapDetails>(gameData.mapSet.Maps.items);
             mapDetails.Add(RickRollMap.Details);
             gameData.mapSet.Maps.items = mapDetails.ToArray();

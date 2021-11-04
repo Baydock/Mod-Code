@@ -44,7 +44,8 @@
     <Reference Include="MelonLoader">
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
-    <Reference Include="NinjaKiwi.Common">
+    <Reference Include="NinjaKiwi.Common, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
