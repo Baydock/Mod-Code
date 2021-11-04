@@ -39,7 +39,7 @@ namespace HelpfulAdditions.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AdditionalSandboxButtons.Properties.Textures", typeof(Textures).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HelpfulAdditions.Properties.Textures", typeof(Textures).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
