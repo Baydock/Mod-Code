@@ -3,6 +3,7 @@ using Assets.Scripts.Unity.UI_New.InGame;
 using Assets.Scripts.Unity.UI_New.InGame.BloonMenu;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
+using MelonLoader;
 using System.Collections.Generic;
 using System.Drawing.Imaging;
 using System.IO;
@@ -63,13 +64,23 @@ namespace HelpfulAdditions {
             __instance.animator.Update(newTime - oldTime);
             oldTime = newTime;
 
-            float spacing = __instance.btnDestroyBloons.transform.position.y - __instance.btnDestroyMonkeys.transform.position.y;
             Vector3 destroyProjectilesPos = __instance.btnDestroyMonkeys.transform.position;
 
-            __instance.btnResetDamage.transform.position += new Vector3(0, spacing);
-            __instance.btnResetAbilityCooldowns.transform.position += new Vector3(0, spacing);
-            __instance.btnDestroyBloons.transform.position += new Vector3(0, spacing);
-            __instance.btnDestroyMonkeys.transform.position += new Vector3(0, spacing);
+            if (InGame.instance.uiRect.rect.width / InGame.instance.uiRect.rect.height > 4 / 3f) {
+                float spacing = __instance.btnDestroyBloons.transform.position.y - __instance.btnDestroyMonkeys.transform.position.y;
+
+                __instance.btnResetDamage.transform.position += new Vector3(0, spacing);
+                __instance.btnResetAbilityCooldowns.transform.position += new Vector3(0, spacing);
+                __instance.btnDestroyBloons.transform.position += new Vector3(0, spacing);
+                __instance.btnDestroyMonkeys.transform.position += new Vector3(0, spacing);
+            } else {
+                float spacing = __instance.btnDestroyBloons.transform.position.x - __instance.btnDestroyMonkeys.transform.position.x;
+
+                __instance.btnResetDamage.transform.position += new Vector3(spacing, 0);
+                __instance.btnResetAbilityCooldowns.transform.position += new Vector3(spacing, 0);
+                __instance.btnDestroyBloons.transform.position += new Vector3(spacing, 0);
+                __instance.btnDestroyMonkeys.transform.position += new Vector3(spacing, 0);
+            }
 
             int instanceId = __instance.GetInstanceID();
             if (Globals.destroyProjectilesButtons.ContainsKey(instanceId))
