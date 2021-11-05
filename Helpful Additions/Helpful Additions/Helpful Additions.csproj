@@ -87,6 +87,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloon Menu Buttons.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Textures.Designer.cs">
@@ -94,6 +95,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Textures.resx</DependentUpon>
     </Compile>
+    <Compile Include="Single Player Coop.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Textures.resx">
