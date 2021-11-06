@@ -63,9 +63,49 @@ namespace HelpfulAdditions.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deleteAllProjectilesButtonSettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("deleteAllProjectilesButtonSettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deleteProjectiles {
             get {
                 object obj = ResourceManager.GetObject("deleteProjectiles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap powersInSandboxSettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("powersInSandboxSettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("SettingsIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap singlePlayerCoopSettingsIcon {
+            get {
+                object obj = ResourceManager.GetObject("singlePlayerCoopSettingsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
