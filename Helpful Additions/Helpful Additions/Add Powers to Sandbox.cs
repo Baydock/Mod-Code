@@ -39,6 +39,7 @@ namespace HelpfulAdditions {
                 InGame.instance.BloonMenu.showInternal = false;
                 ShopMenu.instance.GetComponentInChildren<BloonMenuToggle>(true).gameObject.SetActive(false);
                 RightMenu.instance.powerBtn.gameObject.SetActive(true);
+                powerIsBeingUsed = false;
             }
         }
 
@@ -54,15 +55,10 @@ namespace HelpfulAdditions {
         private static bool powerIsBeingUsed = false;
         [HarmonyPatch(typeof(PowersMenu), nameof(PowersMenu.StartPowerPlacement))]
         [HarmonyPostfix]
-        public static void WhenPowerIsBeingUsed() => powerIsBeingUsed = true;
-
-        [HarmonyPatch(typeof(PowersMenu), nameof(PowersMenu.PowerUseSuccess))]
-        [HarmonyPostfix]
-        public static void PowerUseSuccess() => powerIsBeingUsed = false;
-
-        [HarmonyPatch(typeof(PowersMenu), nameof(PowersMenu.PowerUseFailed))]
-        [HarmonyPostfix]
-        public static void PowerUseFailed() => powerIsBeingUsed = false;
+        public static void WhenPowerIsBeingUsed() {
+            if (InGame.instance.IsSandbox)
+                powerIsBeingUsed = true;
+        }
 
         [HarmonyPatch(typeof(InstaTowerGroupMenu), nameof(InstaTowerGroupMenu.Initialise))]
         [HarmonyPostfix]
@@ -83,9 +79,8 @@ namespace HelpfulAdditions {
         [HarmonyPatch(typeof(PowersMenu), nameof(PowersMenu.UpdateShowInstaMonkeysButton))]
         [HarmonyPostfix]
         public static void RemoveShowInstaMonkeysButton(ref PowersMenu __instance) {
-            if (InGame.instance.IsSandbox) {
+            if (InGame.instance.IsSandbox)
                 __instance.showInstaMonkeysButton.SetActive(false);
-            }
         }
 
         [HarmonyPatch(typeof(PowerButton), nameof(PowerButton.ModeDisabled))]
@@ -119,6 +114,7 @@ namespace HelpfulAdditions {
         [HarmonyPatch(typeof(PowersMenu), nameof(PowersMenu.PowerUseSuccess))]
         [HarmonyPrefix]
         public static bool DontLosePowers() {
+            // If in sandbox, don't allow for player profile to change when power used
             return !InGame.instance.IsSandbox;
         }
     }
