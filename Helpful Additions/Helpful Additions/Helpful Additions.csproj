@@ -67,6 +67,10 @@
     <Reference Include="UnhollowerBaseLib">
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\UnhollowerBaseLib.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.AnimationModule.dll</HintPath>
@@ -87,6 +91,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Powers to Sandbox.cs" />
     <Compile Include="Bloon Menu Buttons.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
