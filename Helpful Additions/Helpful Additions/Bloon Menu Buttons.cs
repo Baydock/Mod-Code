@@ -4,15 +4,15 @@ using Assets.Scripts.Unity.UI_New.InGame.BloonMenu;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
 using System.Collections.Generic;
-using System.Drawing.Imaging;
-using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace HelpfulAdditions {
     public partial class Mod {
-        private static Dictionary<int, GameObject> destroyProjectilesButtons = new Dictionary<int, GameObject>();
+        private static GameObject DestroyProjectilesButton = null;
+
+        private static bool AnyButtonEnabled() => Settings.Default.deleteAllProjectilesOn;
 
         [HarmonyPatch(typeof(BloonMenu), nameof(BloonMenu.Initialise))]
         [HarmonyPostfix]
@@ -25,25 +25,29 @@ namespace HelpfulAdditions {
                 button.OnPointerUpEvent = new System.Action<PointerEventData>((PointerEventData p) => InGame.Bridge.DestroyAllProjectiles());
 
                 Image image = destroyProjectilesButton.GetComponent<Image>();
-                SetImage(image, Textures.deleteProjectiles);
+                SetImage(image, Textures.DeleteAllProjectilesButton);
 
-                destroyProjectilesButtons.Add(__instance.GetInstanceID(), destroyProjectilesButton);
+                if (!(DestroyProjectilesButton is null)) {
+                    Object.Destroy(DestroyProjectilesButton);
+                    DestroyProjectilesButton = null;
+                }
+                DestroyProjectilesButton = destroyProjectilesButton;
             }
 
-            // Allows for animator to only be updated manually
-            // This is necessary because, for whatever reason, patching Animator.Update does nothing
-            __instance.animator.enabled = false;
+            if (AnyButtonEnabled()) {
+                // Allows for animator to only be updated manually
+                // This is necessary because, for whatever reason, patching Animator.Update does nothing
+                __instance.animator.enabled = false;
+            }
         }
 
         [HarmonyPatch(typeof(BloonMenu), nameof(BloonMenu.Destroy))]
         [HarmonyPostfix]
         public static void RemoveButtons(ref BloonMenu __instance) {
             if (Settings.Default.deleteAllProjectilesOn) {
-                int instanceId = __instance.GetInstanceID();
-                if (destroyProjectilesButtons.ContainsKey(instanceId)) {
-                    GameObject projectileButton = destroyProjectilesButtons[instanceId];
-                    Object.Destroy(projectileButton);
-                    destroyProjectilesButtons.Remove(instanceId);
+                if (!(DestroyProjectilesButton is null)) {
+                    Object.Destroy(DestroyProjectilesButton);
+                    DestroyProjectilesButton = null;
                 }
             }
         }
@@ -52,12 +56,14 @@ namespace HelpfulAdditions {
         [HarmonyPatch(typeof(BloonMenu), nameof(BloonMenu.Update))]
         [HarmonyPostfix]
         public static void UpdateButtons(ref BloonMenu __instance) {
-            // Manually updating animator
-            float newTime = Time.time;
-            __instance.animator.Update(newTime - oldTime);
-            oldTime = newTime;
+            if (AnyButtonEnabled()) {
+                // Manually updating animator
+                float newTime = Time.time;
+                __instance.animator.Update(newTime - oldTime);
+                oldTime = newTime;
+            }
 
-            if (Settings.Default.deleteAllProjectilesOn) {
+            if (Settings.Default.deleteAllProjectilesOn && !(DestroyProjectilesButton is null)) {
                 Vector3 destroyProjectilesPos = __instance.btnDestroyMonkeys.transform.position;
 
                 if (InGame.instance.uiRect.rect.width / InGame.instance.uiRect.rect.height > 4 / 3f) {
@@ -76,9 +82,7 @@ namespace HelpfulAdditions {
                     __instance.btnDestroyMonkeys.transform.position += new Vector3(spacing, 0);
                 }
 
-                int instanceId = __instance.GetInstanceID();
-                if (destroyProjectilesButtons.ContainsKey(instanceId))
-                    destroyProjectilesButtons[instanceId].transform.position = destroyProjectilesPos;
+                DestroyProjectilesButton.transform.position = destroyProjectilesPos;
             }
         }
     }

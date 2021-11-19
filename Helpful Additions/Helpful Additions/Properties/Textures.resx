@@ -118,19 +118,553 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="deleteAllProjectilesButtonSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete All Projectiles Button Settings Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Bad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bad.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="deleteProjectiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete projectiles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BadEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BadEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="powersInSandboxSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\powersInSandboxSettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BadSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BadSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bfb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bfb.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BfbEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BfbEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BfbSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BfbSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlackEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlackSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlackSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\blank.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bloonarius" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bloonarius.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BloonariusEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BloonariusEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BloonariusSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BloonariusSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlueEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlueSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlueSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedRegrowZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedRegrowZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoFortifiedZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoFortifiedZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoLeadGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoLeadGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoLeadPurpleGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoLeadPurpleGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoRegrowZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoRegrowZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CamoZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CamoZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CeramicEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CeramicEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CeramicSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CeramicSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ddt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ddt.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DdtEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DdtEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DdtSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DdtSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DeleteAllProjectilesButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete projectiles.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DeleteAllProjectilesButtonSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete All Projectiles Button Settings Icon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteBloonarius" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\elitebloonarius.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteBloonariusEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EliteBloonariusEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteBloonariusSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EliteBloonariusSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteLych" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\elitelych.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteLychEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EliteLychEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EliteLychSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EliteLychSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedBad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedBad.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedBfb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedBfb.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoLeadGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoLeadGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoLeadPurpleGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoLeadPurpleGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoLeadPurpleZebraGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoLeadPurpleZebraGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoRegrowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoRegrowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoRegrowCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoRegrowCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCamoRegrowLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCamoRegrowLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedDdt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedDdt.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedLeadGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedLeadGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedLeadPurpleGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedLeadPurpleGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedLeadPurpleZebraGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedLeadPurpleZebraGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedMoab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedMoab.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedRegrowZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedRegrowZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FortifiedZomg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FortifiedZomg.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GhostBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ghostbloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GhostEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GhostEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GhostSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GhostSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GoldenEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GoldenSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoldenSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GreenEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GreenSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadEdge.pngedge;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadPurpleGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadPurpleGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadPurpleZebraGoldenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadPurpleZebraGoldenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LeadSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LeadSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Lych" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lych.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LychEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LychEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LychSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LychSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Moab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moab.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoabEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoabEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoabSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoabSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NextArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NextArrow.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PinkEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PinkEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PinkSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PinkSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PowersInSandboxSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powersInSandboxSettingsIcon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrevArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrevArrow.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PurpleEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PurpleEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PurpleSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PurpleSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RainbowEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RainbowEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RainbowSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RainbowSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RedEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RedSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowBlackBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowBlackBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowBlueBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowBlueBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowCeramicBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowCeramicBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowGreenBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowGreenBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowLeadBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowLeadBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowPinkBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowPinkBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowPurpleBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowPurpleBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowRainbowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowRainbowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowRedBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowRedBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowWhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowWhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowYellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowYellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RegrowZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RegrowZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RoundInfoButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoundInfoButton.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RoundInfoScreenSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RoundInfoScreenSettingsIcon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="SettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SettingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\SettingsIcon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="singlePlayerCoopSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Single Player Coop Settings Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SinglePlayerCoopSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Single Player Coop Settings Icon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextInputBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextInputBack.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UnknownBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnknownBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WhiteBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhiteBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WhiteEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhiteEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WhiteSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhiteSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YellowBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YellowBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YellowEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YellowEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="YellowSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YellowSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZebraBloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZebraBloon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZebraEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZebraEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZebraSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZebraSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Zomg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zomg.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZomgEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZomgEdge.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZomgSpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZomgSpan.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

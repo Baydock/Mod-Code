@@ -58,5 +58,29 @@ namespace HelpfulAdditions.Properties {
                 this["powersInSandboxOn"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool roundInfoScreen {
+            get {
+                return ((bool)(this["roundInfoScreen"]));
+            }
+            set {
+                this["roundInfoScreen"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool showBloonIds {
+            get {
+                return ((bool)(this["showBloonIds"]));
+            }
+            set {
+                this["showBloonIds"] = value;
+            }
+        }
     }
 }

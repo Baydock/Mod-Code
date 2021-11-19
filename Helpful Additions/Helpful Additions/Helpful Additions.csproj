@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HelpfulAdditions</RootNamespace>
     <AssemblyName>Helpful Additons</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,7 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
@@ -45,7 +46,7 @@
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
     <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
+    <LangVersion>8.0</LangVersion>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
@@ -58,6 +59,7 @@
     <Reference Include="MelonLoader">
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\MelonLoader.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="NinjaKiwi.Common, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\NinjaKiwi.Common.dll</HintPath>
@@ -65,7 +67,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="UnhollowerBaseLib">
@@ -84,6 +85,10 @@
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
       <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Games\steamapps\steamapps\common\BloonsTD6\MelonLoader\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -111,6 +116,7 @@
     </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="Single Player Coop.cs" />
+    <Compile Include="Round Info Screen.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Textures.resx">
@@ -124,19 +130,203 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Resources\delete projectiles.png" />
+    <None Include="Resources\Bad.pngdata" />
+    <None Include="Resources\BadEdge.pngdata" />
+    <None Include="Resources\BadSpan.pngdata" />
+    <None Include="Resources\Bfb.pngdata" />
+    <None Include="Resources\BfbEdge.pngdata" />
+    <None Include="Resources\BfbSpan.pngdata" />
+    <None Include="Resources\BlackBloon.pngdata" />
+    <None Include="Resources\BlackEdge.pngdata" />
+    <None Include="Resources\BlackSpan.pngdata" />
+    <None Include="Resources\BloonariusEdge.pngdata" />
+    <None Include="Resources\BloonariusSpan.pngdata" />
+    <None Include="Resources\BlueBloon.pngdata" />
+    <None Include="Resources\BlueEdge.pngdata" />
+    <None Include="Resources\BlueSpan.pngdata" />
+    <None Include="Resources\CamoBlackBloon.pngdata" />
+    <None Include="Resources\CamoBlueBloon.pngdata" />
+    <None Include="Resources\CamoCeramicBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedBlackBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedBlueBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedGreenBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedPinkBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedPurpleBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRainbowBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRedBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowBlackBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowBlueBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowGreenBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowPinkBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowPurpleBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowRainbowBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowRedBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowWhiteBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowYellowBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedRegrowZebraBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedWhiteBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedYellowBloon.pngdata" />
+    <None Include="Resources\CamoFortifiedZebraBloon.pngdata" />
+    <None Include="Resources\CamoGreenBloon.pngdata" />
+    <None Include="Resources\CamoLeadBloon.pngdata" />
+    <None Include="Resources\CamoPinkBloon.pngdata" />
+    <None Include="Resources\CamoPurpleBloon.pngdata" />
+    <None Include="Resources\CamoRainbowBloon.pngdata" />
+    <None Include="Resources\CamoRedBloon.pngdata" />
+    <None Include="Resources\CamoRegrowBlackBloon.pngdata" />
+    <None Include="Resources\CamoRegrowBlueBloon.pngdata" />
+    <None Include="Resources\CamoRegrowCeramicBloon.pngdata" />
+    <None Include="Resources\CamoRegrowGreenBloon.pngdata" />
+    <None Include="Resources\CamoRegrowLeadBloon.pngdata" />
+    <None Include="Resources\CamoRegrowPinkBloon.pngdata" />
+    <None Include="Resources\CamoRegrowPurpleBloon.pngdata" />
+    <None Include="Resources\CamoRegrowRainbowBloon.pngdata" />
+    <None Include="Resources\CamoRegrowRedBloon.pngdata" />
+    <None Include="Resources\CamoRegrowWhiteBloon.pngdata" />
+    <None Include="Resources\CamoRegrowYellowBloon.pngdata" />
+    <None Include="Resources\CamoRegrowZebraBloon.pngdata" />
+    <None Include="Resources\CamoWhiteBloon.pngdata" />
+    <None Include="Resources\CamoYellowBloon.pngdata" />
+    <None Include="Resources\CamoZebraBloon.pngdata" />
+    <None Include="Resources\CeramicBloon.pngdata" />
+    <None Include="Resources\CeramicEdge.pngdata" />
+    <None Include="Resources\CeramicSpan.pngdata" />
+    <None Include="Resources\Ddt.pngdata" />
+    <None Include="Resources\DdtEdge.pngdata" />
+    <None Include="Resources\DdtSpan.pngdata" />
+    <None Include="Resources\Delete All Projectiles Button Settings Icon.pngdata" />
+    <None Include="Resources\delete projectiles.pngdata" />
+    <None Include="Resources\EliteBloonariusEdge.pngdata" />
+    <None Include="Resources\EliteBloonariusSpan.pngdata" />
+    <None Include="Resources\EliteLychEdge.pngdata" />
+    <None Include="Resources\EliteLychSpan.pngdata" />
+    <None Include="Resources\FortifiedBad.pngdata" />
+    <None Include="Resources\FortifiedBfb.pngdata" />
+    <None Include="Resources\FortifiedBlackBloon.pngdata" />
+    <None Include="Resources\FortifiedBlueBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoCeramicBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoLeadBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoLeadPurpleZebraGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoRegrowBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoRegrowCeramicBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoRegrowLeadBloon.pngdata" />
+    <None Include="Resources\FortifiedCeramicBloon.pngdata" />
+    <None Include="Resources\FortifiedDdt.pngdata" />
+    <None Include="Resources\FortifiedGreenBloon.pngdata" />
+    <None Include="Resources\FortifiedLeadBloon.pngdata" />
+    <None Include="Resources\FortifiedLeadPurpleZebraGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedMoab.pngdata" />
+    <None Include="Resources\FortifiedPinkBloon.pngdata" />
+    <None Include="Resources\FortifiedPurpleBloon.pngdata" />
+    <None Include="Resources\FortifiedRainbowBloon.pngdata" />
+    <None Include="Resources\FortifiedRedBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowBlackBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowBlueBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowCeramicBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowGreenBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowLeadBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowPinkBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowPurpleBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowRainbowBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowRedBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowWhiteBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowYellowBloon.pngdata" />
+    <None Include="Resources\FortifiedRegrowZebraBloon.pngdata" />
+    <None Include="Resources\FortifiedWhiteBloon.pngdata" />
+    <None Include="Resources\FortifiedYellowBloon.pngdata" />
+    <None Include="Resources\FortifiedZebraBloon.pngdata" />
+    <None Include="Resources\FortifiedZomg.pngdata" />
+    <None Include="Resources\GhostEdge.pngdata" />
+    <None Include="Resources\GhostSpan.pngdata" />
+    <None Include="Resources\GoldenEdge.pngdata" />
+    <None Include="Resources\GoldenSpan.pngdata" />
+    <None Include="Resources\GreenBloon.pngdata" />
+    <None Include="Resources\GreenEdge.pngdata" />
+    <None Include="Resources\GreenSpan.pngdata" />
+    <None Include="Resources\LeadBloon.pngdata" />
+    <None Include="Resources\LeadEdge.pngedge" />
+    <None Include="Resources\LeadSpan.pngdata" />
+    <None Include="Resources\LychEdge.pngdata" />
+    <None Include="Resources\LychSpan.pngdata" />
+    <None Include="Resources\Moab.pngdata" />
+    <None Include="Resources\MoabEdge.pngdata" />
+    <None Include="Resources\MoabSpan.pngdata" />
+    <None Include="Resources\NextArrow.pngdata" />
+    <None Include="Resources\PinkBloon.pngdata" />
+    <None Include="Resources\PinkEdge.pngdata" />
+    <None Include="Resources\PinkSpan.pngdata" />
+    <None Include="Resources\powersInSandboxSettingsIcon.pngdata" />
+    <None Include="Resources\PrevArrow.pngdata" />
+    <None Include="Resources\PurpleBloon.pngdata" />
+    <None Include="Resources\PurpleEdge.pngdata" />
+    <None Include="Resources\PurpleSpan.pngdata" />
+    <None Include="Resources\RainbowBloon.pngdata" />
+    <None Include="Resources\RainbowEdge.pngdata" />
+    <None Include="Resources\RainbowSpan.pngdata" />
+    <None Include="Resources\RedBloon.pngdata" />
+    <None Include="Resources\RedEdge.pngdata" />
+    <None Include="Resources\RedSpan.pngdata" />
+    <None Include="Resources\RegrowBlackBloon.pngdata" />
+    <None Include="Resources\RegrowBlueBloon.pngdata" />
+    <None Include="Resources\RegrowCeramicBloon.pngdata" />
+    <None Include="Resources\RegrowGreenBloon.pngdata" />
+    <None Include="Resources\RegrowLeadBloon.pngdata" />
+    <None Include="Resources\RegrowPinkBloon.pngdata" />
+    <None Include="Resources\RegrowPurpleBloon.pngdata" />
+    <None Include="Resources\RegrowRainbowBloon.pngdata" />
+    <None Include="Resources\RegrowRedBloon.pngdata" />
+    <None Include="Resources\RegrowWhiteBloon.pngdata" />
+    <None Include="Resources\RegrowYellowBloon.pngdata" />
+    <None Include="Resources\RegrowZebraBloon.pngdata" />
+    <None Include="Resources\RoundInfoButton.pngdata" />
+    <None Include="Resources\RoundInfoScreenSettingsIcon.pngdata" />
+    <None Include="Resources\SettingsIcon.pngdata" />
+    <None Include="Resources\Single Player Coop Settings Icon.pngdata" />
+    <None Include="Resources\TextInputBack.pngdata" />
+    <None Include="Resources\UnknownBloon.pngdata" />
+    <None Include="Resources\WhiteBloon.pngdata" />
+    <None Include="Resources\WhiteEdge.pngdata" />
+    <None Include="Resources\WhiteSpan.pngdata" />
+    <None Include="Resources\YellowBloon.pngdata" />
+    <None Include="Resources\YellowEdge.pngdata" />
+    <None Include="Resources\YellowSpan.pngdata" />
+    <None Include="Resources\ZebraBloon.pngdata" />
+    <None Include="Resources\ZebraEdge.pngdata" />
+    <None Include="Resources\ZebraSpan.pngdata" />
+    <None Include="Resources\Zomg.pngdata" />
+    <None Include="Resources\ZomgEdge.pngdata" />
+    <None Include="Resources\ZomgSpan.pngdata" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Delete All Projectiles Button Settings Icon.png" />
+    <None Include="Resources\Blank.pngdata" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Single Player Coop Settings Icon.png" />
+    <None Include="Resources\CamoGoldenBloon.pngdata" />
+    <None Include="Resources\CamoLeadGoldenBloon.pngdata" />
+    <None Include="Resources\CamoLeadPurpleGoldenBloon.pngdata" />
+    <None Include="Resources\CamoLeadPurpleZebraBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoLeadGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedCamoLeadPurpleGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedLeadGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedLeadPurpleGoldenBloon.pngdata" />
+    <None Include="Resources\FortifiedLeadPurpleZebraBloon.pngdata" />
+    <None Include="Resources\GoldenBloon.pngdata" />
+    <None Include="Resources\LeadGoldenBloon.pngdata" />
+    <None Include="Resources\LeadPurpleGoldenBloon.pngdata" />
+    <None Include="Resources\LeadPurpleZebraGoldenBloon.pngdata" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\powersInSandboxSettingsIcon.png" />
+    <None Include="Resources\GhostBloon.pngdata" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SettingsIcon.png" />
+    <None Include="Resources\Bloonarius.pngdata" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliteBloonarius.pngdata" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EliteLych.pngdata" />
+    <None Include="Resources\Lych.pngdata" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
