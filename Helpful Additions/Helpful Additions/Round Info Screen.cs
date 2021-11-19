@@ -53,9 +53,6 @@ namespace HelpfulAdditions {
                     RoundInfoButton = null;
                 }
                 RoundInfoButton = roundInfoButton;
-
-                int i = 0;
-                InGame.Bridge.Model.GetRoundSet().rounds[0] = new RoundModel("", InGame.Bridge.Model.bloons.Select(bloon => new BloonGroupModel("", bloon.id, ++i * 60, (i + 1) * 60, 1)).ToArray());
             }
         }
 
