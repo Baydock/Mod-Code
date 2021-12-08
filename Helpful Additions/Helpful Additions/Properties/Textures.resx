@@ -619,6 +619,9 @@
   <data name="RoundInfoScreenSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RoundInfoScreenSettingsIcon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="RoundSetSwitcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\roundsetswitcher.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="SettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SettingsIcon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

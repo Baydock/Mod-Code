@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.4.2", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.4.3", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {
@@ -17,7 +17,7 @@ namespace HelpfulAdditions {
             SetImage(image, tex);
         }
 
-        private static void SetImage(Image image, Texture2D tex) => image.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2());
+        private static void SetImage(Image image, Texture2D tex) => image.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
 
         private static readonly string[] NormalBloonBaseTypes = {
             "Red",

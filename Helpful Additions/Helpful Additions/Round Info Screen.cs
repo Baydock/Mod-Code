@@ -7,7 +7,6 @@ using Assets.Scripts.Unity.UI_New.Main.PowersSelect;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnhollowerRuntimeLib;
 using UnityEngine;
@@ -23,7 +22,6 @@ namespace HelpfulAdditions {
         private const string RoundInfoScreenName = "RoundInfoScreen";
         private const string RoundInfoName = "RoundInfo";
         private const string RoundSelectorName = "RoundSelector";
-        private const string HalfAlpha = "HalfAlpha";
         private const float RoundInfoPanelHeight = 200;
         private const float RoundInfoSpanHeight = RoundInfoPanelHeight / 4;
         private const float RoundInfoEdgeWidth = RoundInfoSpanHeight / 2;

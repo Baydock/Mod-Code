@@ -114,6 +114,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Textures.resx</DependentUpon>
     </Compile>
+    <Compile Include="Round Set Switcher.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Single Player Coop.cs" />
     <Compile Include="Round Info Screen.cs" />
@@ -327,6 +328,9 @@
   <ItemGroup>
     <None Include="Resources\EliteLych.pngdata" />
     <None Include="Resources\Lych.pngdata" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoundSetSwitcher.pngdata" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -82,5 +82,17 @@ namespace HelpfulAdditions.Properties {
                 this["showBloonIds"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool roundSetSwitcher {
+            get {
+                return ((bool)(this["roundSetSwitcher"]));
+            }
+            set {
+                this["roundSetSwitcher"] = value;
+            }
+        }
     }
 }

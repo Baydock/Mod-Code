@@ -3,8 +3,6 @@ using Assets.Scripts.Unity.UI_New.ChallengeEditor;
 using Assets.Scripts.Unity.UI_New.Settings;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
-using MelonLoader;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -67,6 +65,12 @@ namespace HelpfulAdditions {
                                                                              nameof(Settings.Default.showBloonIds),
                                                                              Textures.RoundInfoScreenSettingsIcon);
                 GroupExtraSettingsPanels(__instance, roundInfoScreenPanel, showBloonIdsPanel);
+
+                /*AddExtraSettingsPanel(__instance,
+                                      "RoundSetSwitcherPanel",
+                                      "Sandbox Round Set Switcher",
+                                      nameof(Settings.Default.roundSetSwitcher),
+                                      Textures.RoundSetSwitcher);*/
             }
         }
 
