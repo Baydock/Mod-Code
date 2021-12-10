@@ -773,6 +773,26 @@ namespace HelpfulAdditions.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] DropDownArrow {
+            get {
+                object obj = ResourceManager.GetObject("DropDownArrow", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] DropDownButton {
+            get {
+                object obj = ResourceManager.GetObject("DropDownButton", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] EliteBloonarius {
             get {
                 object obj = ResourceManager.GetObject("EliteBloonarius", resourceCulture);

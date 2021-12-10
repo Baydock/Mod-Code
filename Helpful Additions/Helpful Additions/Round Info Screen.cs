@@ -70,6 +70,15 @@ namespace HelpfulAdditions {
             }
         }
 
+        [HarmonyPatch(typeof(MainHudRightAlign), nameof(MainHudRightAlign.OnDestroy))]
+        [HarmonyPostfix]
+        public static void DestroyRoundInfoButton() {
+            if (!(RoundInfoButton is null)) {
+                Object.Destroy(RoundInfoButton);
+                RoundInfoButton = null;
+            }
+        }
+
         // dont want the menu to set itself up to make things easier
         [HarmonyPatch(typeof(PowersSelectScreen), nameof(PowersSelectScreen.Open))]
         [HarmonyPrefix]
@@ -104,25 +113,20 @@ namespace HelpfulAdditions {
                     if (!(components[i] is Transform))
                         Object.DestroyImmediate(components[i]);
 
-                List<Transform> children = new List<Transform>();
-                for (int i = 0; i < __instance.transform.childCount; i++)
-                    children.Add(__instance.transform.GetChild(i));
-                for (int i = 0; i < children.Count; i++) {
-                    if (!(__instance.menuTitleTxt.transform.IsChildOf(children[i]) || roundInfo.GetInstanceID() == children[i].gameObject.GetInstanceID())) {
+                for (int i = 0; i < __instance.transform.childCount; i++) {
+                    Transform child = __instance.transform.GetChild(i);
+                    if (!(__instance.menuTitleTxt.transform.IsChildOf(child) || roundInfo.GetInstanceID() == child.gameObject.GetInstanceID())) {
                         // I need some form of update funtion lol, PowerSelectScreen doesn't have a static instance, and this is the only one I could find
-                        if (__instance.powerButtonsContainer.transform.IsChildOf(children[i]))
-                            children[i].localScale = Vector3.zero;
+                        if (__instance.powerButtonsContainer.transform.IsChildOf(child))
+                            child.localScale = Vector3.zero;
                         else
-                            children[i].gameObject.SetActive(false);
+                            child.gameObject.SetActive(false);
                     }
                 }
 
                 GameObject roundSelector = Object.Instantiate(roundInfo, roundInfo.transform);
-                children = new List<Transform>();
                 for (int i = 0; i < roundSelector.transform.childCount; i++)
-                    children.Add(roundSelector.transform.GetChild(i));
-                for (int i = 0; i < children.Count; i++)
-                    Object.Destroy(children[i].gameObject);
+                    Object.Destroy(roundSelector.transform.GetChild(i).gameObject);
                 roundSelector.name = RoundSelectorName;
                 HorizontalLayoutGroup hlg = roundSelector.AddComponent<HorizontalLayoutGroup>();
                 hlg.childAlignment = TextAnchor.MiddleLeft;
@@ -262,13 +266,11 @@ namespace HelpfulAdditions {
         private static bool NotFirstRound() => CurrentRound > 0;
 
         private static void PopulateRoundInfo(GameObject roundInfo, TMP_FontAsset font) {
-
-            List<Transform> children = new List<Transform>();
-            for (int i = 0; i < roundInfo.transform.childCount; i++)
-                children.Add(roundInfo.transform.GetChild(i));
-            for (int i = 0; i < children.Count; i++)
-                if (!children[i].gameObject.name.Equals(RoundSelectorName))
-                    Object.Destroy(children[i].gameObject);
+            for (int i = 0; i < roundInfo.transform.childCount; i++) {
+                GameObject child = roundInfo.transform.GetChild(i).gameObject;
+                if (!child.name.Equals(RoundSelectorName))
+                    Object.Destroy(child);
+            }
             ScrollRect scrollRect = roundInfo.GetComponent<ScrollRect>();
             if (!(scrollRect is null)) {
                 Object.DestroyImmediate(scrollRect);
@@ -313,6 +315,7 @@ namespace HelpfulAdditions {
                 scrollRect.content = contentRect;
                 // scroll to top
                 scrollRect.normalizedPosition = new Vector2(0, 1);
+                scrollRect.viewport = scrollRect.GetComponent<RectTransform>();
 
                 parent = content;
             }

@@ -331,6 +331,12 @@
   <data name="DeleteAllProjectilesButtonSettingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delete All Projectiles Button Settings Icon.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="DropDownArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DropDownArrow.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DropDownButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DropDownButton.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="EliteBloonarius" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\elitebloonarius.pngdata;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

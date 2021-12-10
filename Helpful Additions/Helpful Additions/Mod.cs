@@ -2,15 +2,22 @@
 using HarmonyLib;
 using MelonLoader;
 using System.Linq;
+using UnhollowerRuntimeLib;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.4.3", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.5.0", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {
     [HarmonyPatch]
     public partial class Mod : MelonMod {
+        private static MelonLogger.Instance Logger;
+
+        public override void OnApplicationStart() {
+            Logger = LoggerInstance;
+        }
+
         private static void SetImage(Image image, byte[] data) {
             Texture2D tex = new Texture2D(0, 0) { wrapMode = TextureWrapMode.Clamp };
             ImageConversion.LoadImage(tex, data);

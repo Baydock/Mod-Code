@@ -66,11 +66,11 @@ namespace HelpfulAdditions {
                                                                              Textures.RoundInfoScreenSettingsIcon);
                 GroupExtraSettingsPanels(__instance, roundInfoScreenPanel, showBloonIdsPanel);
 
-                /*AddExtraSettingsPanel(__instance,
+                AddExtraSettingsPanel(__instance,
                                       "RoundSetSwitcherPanel",
                                       "Sandbox Round Set Switcher",
                                       nameof(Settings.Default.roundSetSwitcher),
-                                      Textures.RoundSetSwitcher);*/
+                                      Textures.RoundSetSwitcher);
             }
         }
 

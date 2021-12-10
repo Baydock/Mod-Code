@@ -197,6 +197,8 @@
     <None Include="Resources\DdtSpan.pngdata" />
     <None Include="Resources\Delete All Projectiles Button Settings Icon.pngdata" />
     <None Include="Resources\delete projectiles.pngdata" />
+    <None Include="Resources\DropDownArrow.pngdata" />
+    <None Include="Resources\DropDownButton.pngdata" />
     <None Include="Resources\EliteBloonariusEdge.pngdata" />
     <None Include="Resources\EliteBloonariusSpan.pngdata" />
     <None Include="Resources\EliteLychEdge.pngdata" />
