@@ -47,10 +47,6 @@ namespace HelpfulAdditions {
                 }
                 RoundSetSwitcherButton = roundSetSwitcherButton;
             }
-
-            RoundSetModel amongus = new RoundSetModel("amongus", new RoundModel[] { new RoundModel("1", new BloonGroupModel[] { new BloonGroupModel("1", "BadFortified", 0, 1, 1000) }) });
-            InGame.Bridge.Model.roundSets = InGame.Bridge.Model.roundSets.AddItem(amongus).ToArray();
-            InGame.Bridge.Model.roundSetsByName.Add("amongus", amongus);
         }
 
         // MainHudRightAlign.Update does not exist
