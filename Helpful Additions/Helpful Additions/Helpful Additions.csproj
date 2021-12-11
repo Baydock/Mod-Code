@@ -101,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add Powers to Sandbox.cs" />
+    <Compile Include="Blons In Editor.cs" />
     <Compile Include="Bloon Menu Buttons.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -140,6 +141,7 @@
     <None Include="Resources\BlackBloon.pngdata" />
     <None Include="Resources\BlackEdge.pngdata" />
     <None Include="Resources\BlackSpan.pngdata" />
+    <None Include="Resources\blonsInEditor.pngdata" />
     <None Include="Resources\BloonariusEdge.pngdata" />
     <None Include="Resources\BloonariusSpan.pngdata" />
     <None Include="Resources\BlueBloon.pngdata" />

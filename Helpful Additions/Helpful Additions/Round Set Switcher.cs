@@ -1,12 +1,10 @@
-﻿using Assets.Scripts.Models.Rounds;
-using Assets.Scripts.Unity.UI_New;
+﻿using Assets.Scripts.Unity.UI_New;
 using Assets.Scripts.Unity.UI_New.InGame;
 using Assets.Scripts.Unity.UI_New.Popups;
 using Assets.Scripts.Unity.UI_New.Utils;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnhollowerRuntimeLib;
@@ -126,7 +124,7 @@ namespace HelpfulAdditions {
                 List<string> names = new List<string>();
                 foreach (string name in InGame.Bridge.Model.roundSetsByName.Keys)
                     names.Add(Regex.Replace(name, "roundset", "", RegexOptions.IgnoreCase));
-                foreach(string name in names)
+                foreach (string name in names)
                     dropdown.options.Add(new TMP_Dropdown.OptionData(name));
                 inputObject.transform.parent = oldParent;
                 RectTransform inputRect = inputObject.GetComponent<RectTransform>();
@@ -180,12 +178,12 @@ namespace HelpfulAdditions {
                 listObject.SetActive(false);
 
                 GameObject listContentObject = new GameObject("Content", new Il2CppSystem.Type[] { Il2CppType.Of<RectTransform>() });
-                listScroll.content = listContentObject.GetComponent<RectTransform>();
                 listContentObject.transform.parent = listObject.transform;
                 RectTransform listContentRect = listContentObject.GetComponent<RectTransform>();
                 listContentRect.localScale = Vector3.one;
                 listContentRect.sizeDelta = textRect.sizeDelta;
                 listContentRect.localPosition = Vector3.zero;
+                listScroll.content = listContentRect;
 
                 GameObject itemObject = new GameObject("Item");
                 Toggle itemToggle = itemObject.AddComponent<Toggle>();

@@ -163,6 +163,16 @@ namespace HelpfulAdditions.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] blonsInEditor {
+            get {
+                object obj = ResourceManager.GetObject("blonsInEditor", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Bloonarius {
             get {
                 object obj = ResourceManager.GetObject("Bloonarius", resourceCulture);

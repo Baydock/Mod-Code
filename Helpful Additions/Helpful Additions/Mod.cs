@@ -2,11 +2,10 @@
 using HarmonyLib;
 using MelonLoader;
 using System.Linq;
-using UnhollowerRuntimeLib;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.5.0", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.1", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {

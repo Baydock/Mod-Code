@@ -94,5 +94,17 @@ namespace HelpfulAdditions.Properties {
                 this["roundSetSwitcher"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool blonsInEditor {
+            get {
+                return ((bool)(this["blonsInEditor"]));
+            }
+            set {
+                this["blonsInEditor"] = value;
+            }
+        }
     }
 }
