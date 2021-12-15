@@ -1,11 +1,12 @@
 ﻿using Assets.Scripts.Models.Bloons;
 using HarmonyLib;
 using MelonLoader;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.1", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.3", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {
@@ -17,11 +18,13 @@ namespace HelpfulAdditions {
             Logger = LoggerInstance;
         }
 
-        private static void SetImage(Image image, byte[] data) {
+        private static Texture2D LoadTexture(byte[] data) {
             Texture2D tex = new Texture2D(0, 0) { wrapMode = TextureWrapMode.Clamp };
             ImageConversion.LoadImage(tex, data);
-            SetImage(image, tex);
+            return tex;
         }
+
+        private static void SetImage(Image image, byte[] data) => SetImage(image, LoadTexture(data));
 
         private static void SetImage(Image image, Texture2D tex) => image.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
 
@@ -125,5 +128,45 @@ namespace HelpfulAdditions {
                 return "Elite" + boss.baseId;
             return boss.baseId;
         }
+
+        private static readonly Dictionary<string, (byte[], Vector2?)> customBloonIcons = new Dictionary<string, (byte[], Vector2?)>();
+        private static readonly Dictionary<string, byte[]> customBloonEdges = new Dictionary<string, byte[]>();
+        private static readonly Dictionary<string, byte[]> customBloonSpans = new Dictionary<string, byte[]>();
+
+        /// <summary>
+        /// This function allows other modders to add custom bloon graphics, such that they show up within my mod.
+        /// Reflection is necessary to access this method from another mod.
+        /// </summary>
+        /// <param name="bloonId">The id of the custom bloon being added</param>
+        /// <param name="icon">The icon of the custom bloon being added as bytes from an image file</param>
+        /// <param name="edge">The graphic for the ends of a timespan for the custom bloon as bytes from an image file</param>
+        /// <param name="span">The graphic for the span of a timespan for the custom bloon as bytes from an image file</param>
+        /// <param name="iconSize">The size of the icon in Unity, where the image size is the original,
+        /// and 200 is the maximum recommended size</param>
+        public static void AddCustomBloon(string bloonId, byte[] icon, byte[] edge, byte[] span, Vector2? iconSize = null) {
+            if (!customBloonIcons.ContainsKey(bloonId)) {
+                customBloonIcons.Add(bloonId, (icon, iconSize));
+                customBloonEdges.Add(bloonId, edge);
+                customBloonSpans.Add(bloonId, span);
+            } else {
+                customBloonIcons[bloonId] = (icon, iconSize);
+                customBloonEdges[bloonId] = edge;
+                customBloonSpans[bloonId] = span;
+            }
+        }
+
+        /// <summary>
+        /// This function allows other modders to add custom bloon graphics, such that they show up within my mod.
+        /// Reflection is necessary to access this method from another mod.
+        /// </summary>
+        /// <param name="bloonId">The id of the custom bloon being added</param>
+        /// <param name="icon">The icon of the custom bloon being added as a Texture2D</param>
+        /// <param name="edge">The graphic for the ends of a timespan for the custom bloon as a Texture2D</param>
+        /// <param name="span">The graphic for the span of a timespan for the custom bloon as a Texture2D</param>
+        /// <param name="iconSize">The size of the icon in Unity, where the image size is the original,
+        /// and 200 is the maximum recommended size</param>
+        // Must convert to byte[] in order for the Il2Cpp side to not garbage collect it
+        public static void AddCustomBloon(string bloonId, Texture2D icon, Texture2D edge, Texture2D span, Vector2? iconSize = null) =>
+            AddCustomBloon(bloonId, ImageConversion.EncodeToPNG(icon), ImageConversion.EncodeToPNG(edge), ImageConversion.EncodeToPNG(span), iconSize);
     }
 }

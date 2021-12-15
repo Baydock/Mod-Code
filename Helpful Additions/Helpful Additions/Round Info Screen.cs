@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Models.Bloons;
 using Assets.Scripts.Models.Rounds;
+using Assets.Scripts.Simulation.Track;
 using Assets.Scripts.Unity.Menu;
 using Assets.Scripts.Unity.UI_New;
 using Assets.Scripts.Unity.UI_New.InGame;
@@ -227,6 +228,7 @@ namespace HelpfulAdditions {
                     PopulateRoundInfo(roundInfo, font);
                     prevArrowImage.enabled = prevArrowButton.enabled = NotFirstRound();
                     nextArrowImage.enabled = nextArrowButton.enabled = NotLastRound();
+                    EventSystem.current.SetSelectedGameObject(null);
                 });
                 roundNumberInput.onSubmit.AddListener(whenDone);
                 roundNumberInput.onDeselect.AddListener(whenDone);
@@ -271,11 +273,6 @@ namespace HelpfulAdditions {
                 if (!child.name.Equals(RoundSelectorName))
                     Object.Destroy(child);
             }
-            ScrollRect scrollRect = roundInfo.GetComponent<ScrollRect>();
-            if (!(scrollRect is null)) {
-                Object.DestroyImmediate(scrollRect);
-                scrollRect = null;
-            }
 
             RoundSetModel roundSet = InGame.Bridge.Model.GetRoundSet();
             List<BloonGroupModel> bloonGroups = new List<BloonGroupModel>(roundSet.rounds[CurrentRound].groups);
@@ -285,13 +282,13 @@ namespace HelpfulAdditions {
             GameObject parent = roundInfo;
             bool is4x3 = Screen.width / (float)Screen.height <= 4 / 3f;
             if ((!is4x3 && bloonGroups.Count > 6) || bloonGroups.Count > 7) {
-                scrollRect = roundInfo.AddComponent<ScrollRect>();
-                scrollRect.horizontal = false;
-                scrollRect.scrollSensitivity = 150;
 
                 float width = RoundInfoPanelHeight + RoundInfoTimesWidth + RoundInfoSpacing + RoundInfoEdgeWidth;
 
                 GameObject scroll = new GameObject("Scroll");
+                ScrollRect scrollRect = scroll.AddComponent<ScrollRect>();
+                scrollRect.horizontal = false;
+                scrollRect.scrollSensitivity = 150;
                 LayoutElement scrollLayout = scroll.AddComponent<LayoutElement>();
                 scrollLayout.minHeight = RoundInfoPanelHeight * ((is4x3 ? 7 : 6) + .5f);
                 scrollLayout.minWidth = width;
@@ -315,7 +312,6 @@ namespace HelpfulAdditions {
                 scrollRect.content = contentRect;
                 // scroll to top
                 scrollRect.normalizedPosition = new Vector2(0, 1);
-                scrollRect.viewport = scrollRect.GetComponent<RectTransform>();
 
                 parent = content;
             }
@@ -326,26 +322,56 @@ namespace HelpfulAdditions {
                     end = bloonGroups[i].end;
 
             float unitPerTime = RoundInfoTimesWidth / end;
+
+            if (Settings.Default.showBossBloons) {
+                BossBloonManager bossManager = InGame.Bridge.simulation.map.spawner.bossBloonManager;
+                if (!(bossManager is null)) {
+                    int bossTier = -1;
+                    for (int i = 0; i < bossManager.spawnRounds.Count; i++) {
+                        if (CurrentRound == bossManager.spawnRounds[i]) {
+                            bossTier = i + 1;
+                            break;
+                        }
+                    }
+                    if (bossTier > 0) {
+                        string boss = InGame.Bridge.Model.bossBloonType;
+                        if (InGame.Bridge.Model.bossEliteMode)
+                            boss += "Elite";
+                        boss += bossTier;
+                        AddRoundInfoPanel(parent, new BloonGroupModel("", boss, 0, end, 1), unitPerTime, font, true);
+                    }
+                }
+            }
+
             for (int i = 0; i < bloonGroups.Count; i++)
                 AddRoundInfoPanel(parent, bloonGroups[i], unitPerTime, font);
         }
 
-        private static void AddRoundInfoPanel(GameObject parent, BloonGroupModel group, float unitPerTime, TMP_FontAsset font) {
+        private static void AddRoundInfoPanel(GameObject parent, BloonGroupModel group, float unitPerTime, TMP_FontAsset font, bool isRealBoss = false) {
             BloonModel bloonModel = InGame.Bridge.Model.GetBloon(group.bloon);
             string bloonType = GetBloonType(bloonModel);
-            byte[] texture, edgeTexture, spanTexture;
-            if (bloonType is null) {
-                texture = Textures.UnknownBloon;
-                edgeTexture = Textures.GhostEdge;
-                spanTexture = Textures.GhostSpan;
-            } else {
+            byte[] iconTexture = null, edgeTexture = null, spanTexture = null;
+            Vector2? iconSize = null;
+            if (!(bloonType is null)) {
                 string bloonBaseType = GetBloonBaseType(bloonModel);
-                texture = (byte[])Textures.ResourceManager.GetObject(bloonType);
+                iconTexture = (byte[])Textures.ResourceManager.GetObject(bloonType);
                 edgeTexture = (byte[])Textures.ResourceManager.GetObject($"{bloonBaseType}Edge");
                 spanTexture = (byte[])Textures.ResourceManager.GetObject($"{bloonBaseType}Span");
             }
+            if (customBloonIcons.ContainsKey(bloonModel.id)) {
+                iconTexture = customBloonIcons[bloonModel.id].Item1;
+                iconSize = customBloonIcons[bloonModel.id].Item2;
+                edgeTexture = customBloonEdges[bloonModel.id];
+                spanTexture = customBloonSpans[bloonModel.id];
+            }
+            if (iconTexture is null)
+                iconTexture = Textures.UnknownBloon;
+            if (edgeTexture is null)
+                edgeTexture = Textures.GhostEdge;
+            if (spanTexture is null)
+                spanTexture = Textures.GhostSpan;
 
-            GameObject panel = new GameObject(bloonType);
+            GameObject panel = new GameObject(group.bloon);
             LayoutElement layout = panel.AddComponent<LayoutElement>();
             layout.minHeight = RoundInfoPanelHeight;
             layout.minWidth = RoundInfoPanelHeight + RoundInfoTimesWidth + RoundInfoSpacing;
@@ -370,23 +396,30 @@ namespace HelpfulAdditions {
             bloonIconRect.sizeDelta = new Vector2(RoundInfoPanelHeight, RoundInfoPanelHeight);
             bloonIcon.transform.parent = bloonIconAndCount.transform;
 
-            GameObject bloon = new GameObject(bloonType);
+            GameObject bloon = new GameObject(group.bloon);
             Image bloonImage = bloon.AddComponent<Image>();
-            SetImage(bloonImage, texture);
+            SetImage(bloonImage, iconTexture);
             LayoutElement bloonLayout = bloon.AddComponent<LayoutElement>();
-            bloonLayout.minWidth = bloonImage.sprite.texture.width;
-            bloonLayout.minHeight = bloonImage.sprite.texture.height;
+            if (iconSize is null) {
+                bloonLayout.minWidth = bloonImage.sprite.texture.width;
+                bloonLayout.minHeight = bloonImage.sprite.texture.height;
+            } else {
+                bloonLayout.minWidth = iconSize.Value.x;
+                bloonLayout.minHeight = iconSize.Value.y;
+            }
             bloon.transform.parent = bloonIcon.transform;
 
-            GameObject bloonCount = new GameObject("Count");
-            TextMeshProUGUI bloonCountText = bloonCount.AddComponent<TextMeshProUGUI>();
-            bloonCountText.text = $"x{group.count}";
-            bloonCountText.alignment = TextAlignmentOptions.BottomRight;
-            bloonCountText.font = font;
-            bloonCountText.fontSize = RoundInfoFontSize;
-            RectTransform bloonCountRect = bloonCount.GetComponent<RectTransform>();
-            bloonCountRect.sizeDelta = new Vector2(RoundInfoPanelHeight, RoundInfoPanelHeight);
-            bloonCount.transform.parent = bloonIconAndCount.transform;
+            if (!isRealBoss) {
+                GameObject bloonCount = new GameObject("Count");
+                TextMeshProUGUI bloonCountText = bloonCount.AddComponent<TextMeshProUGUI>();
+                bloonCountText.text = $"x{group.count}";
+                bloonCountText.alignment = TextAlignmentOptions.BottomRight;
+                bloonCountText.font = font;
+                bloonCountText.fontSize = RoundInfoFontSize;
+                RectTransform bloonCountRect = bloonCount.GetComponent<RectTransform>();
+                bloonCountRect.sizeDelta = new Vector2(RoundInfoPanelHeight, RoundInfoPanelHeight);
+                bloonCount.transform.parent = bloonIconAndCount.transform;
+            }
 
             if (bloonModel.isBoss) {
                 GameObject bossTier = new GameObject("BossTier");
@@ -419,7 +452,10 @@ namespace HelpfulAdditions {
             timesText.text = "0";
             float timesTextHeight = timesText.preferredHeight;
             // still want the start to be negative here, whenever it is, for the funnies
-            timesText.text = $"{Math.Round(group.start / 60, 2)}s - {Math.Round(group.end / 60, 2)}s";
+            if (isRealBoss)
+                timesText.text = "Enters this round";
+            else
+                timesText.text = $"{Math.Round(group.start / 60, 2)}s - {Math.Round(group.end / 60, 2)}s";
             times.transform.parent = infoBox.transform;
             RectTransform timesRect = times.GetComponent<RectTransform>();
             timesRect.pivot = Vector2.zero;

@@ -99,7 +99,13 @@ namespace HelpfulAdditions {
                                                                              "Show Bloon Ids",
                                                                              nameof(Settings.Default.showBloonIds),
                                                                              Textures.RoundInfoScreenSettingsIcon);
-                GroupExtraSettingsPanels(__instance, content, roundInfoScreenPanel, showBloonIdsPanel);
+                ExtraSettingsPanel showBossBloonsPanel = AddExtraSettingsPanel(__instance,
+                                                                               content,
+                                                                               "ShowBossBloonsPanel",
+                                                                               "Show Boss Bloons",
+                                                                               nameof(Settings.Default.showBossBloons),
+                                                                               Textures.RoundInfoScreenSettingsIcon);
+                GroupExtraSettingsPanels(__instance, content, roundInfoScreenPanel, showBloonIdsPanel, showBossBloonsPanel);
 
                 AddExtraSettingsPanel(__instance,
                                       content,

@@ -106,5 +106,17 @@ namespace HelpfulAdditions.Properties {
                 this["blonsInEditor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool showBossBloons {
+            get {
+                return ((bool)(this["showBossBloons"]));
+            }
+            set {
+                this["showBossBloons"] = value;
+            }
+        }
     }
 }
