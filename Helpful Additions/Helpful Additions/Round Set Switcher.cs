@@ -4,6 +4,7 @@ using Assets.Scripts.Unity.UI_New.Popups;
 using Assets.Scripts.Unity.UI_New.Utils;
 using HarmonyLib;
 using HelpfulAdditions.Properties;
+using NinjaKiwi.Common;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
@@ -122,10 +123,12 @@ namespace HelpfulAdditions {
                 TMP_Dropdown dropdown = inputObject.AddComponent<TMP_Dropdown>();
                 dropdown.name = SwitcherCode;
                 List<string> names = new List<string>();
-                foreach (string name in InGame.Bridge.Model.roundSetsByName.Keys)
-                    names.Add(Regex.Replace(name, "roundset", "", RegexOptions.IgnoreCase));
-                foreach (string name in names)
-                    dropdown.options.Add(new TMP_Dropdown.OptionData(name));
+                foreach (string name in InGame.Bridge.Model.roundSetsByName.Keys) {
+					string displayName = LocalizationManager.Instance.GetText(name);
+                    displayName = Regex.Replace(displayName, "roundset", "", RegexOptions.IgnoreCase);
+                    names.Add(displayName);
+                    dropdown.options.Add(new TMP_Dropdown.OptionData(displayName));
+				}
                 inputObject.transform.parent = oldParent;
                 RectTransform inputRect = inputObject.GetComponent<RectTransform>();
                 inputRect.localScale = Vector3.one;
