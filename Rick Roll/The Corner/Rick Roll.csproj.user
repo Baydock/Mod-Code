@@ -8,4 +8,12 @@
     <StartAction>Program</StartAction>
     <StartProgram>D:\Games\steamapps\steamapps\common\BloonsTD6\BloonsTD6.exe</StartProgram>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <StartProgram>D:\Games\steamapps\steamapps\common\BloonsTD6\BloonsTD6.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <StartProgram>D:\Games\steamapps\steamapps\common\BloonsTD6\BloonsTD6.exe</StartProgram>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
 </Project>

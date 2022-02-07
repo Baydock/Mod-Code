@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.3", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.4", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {

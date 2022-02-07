@@ -1,18 +1,16 @@
-﻿using Assets.Scripts.Models.Map;
+﻿using Assets.Scripts.Data;
+using Assets.Scripts.Data.MapSets;
+using Assets.Scripts.Models.Map;
 using Assets.Scripts.Unity;
 using Assets.Scripts.Unity.Map;
 using Assets.Scripts.Unity.UI_New;
-using Assets.Scripts.Unity.UI_New.Main.MapSelect;
 using Assets.Scripts.Utils;
 using HarmonyLib;
 using MelonLoader;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using NinjaKiwi.Common;
-using Assets.Scripts.Data;
-using Assets.Scripts.Data.MapSets;
-using System.Collections.Generic;
 
 namespace RickRoll {
 
@@ -35,12 +33,6 @@ namespace RickRoll {
             mapDetails.Add(RickRollMap.Details);
             gameData.mapSet.Maps.items = mapDetails.ToArray();
         }
-    }
-
-    [HarmonyPatch(typeof(MapSelectScreen), nameof(MapSelectScreen.Open))]
-    public class Open_Patch {
-        [HarmonyPostfix]
-        public static void Postfix(Il2CppSystem.Object data) => MelonLogger.Msg(data is null);
     }
 
     [HarmonyPatch(typeof(MapLoader), nameof(MapLoader.Load))]

@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Data.MapSets;
-using Assets.Scripts.Models.Difficulty;
 using Assets.Scripts.Models.Map;
 using Assets.Scripts.Models.Map.Gizmos;
 using Assets.Scripts.Models.Map.Spawners;
@@ -18,7 +17,7 @@ namespace RickRoll {
 
         public static MapDetails Details {
             get {
-                if(details == null) {
+                if (details == null) {
                     details = new MapDetails() {
                         id = Name,
                         difficulty = MapDifficulty.Expert,
@@ -104,7 +103,7 @@ namespace RickRoll {
 
         private static CoopAreaLayoutModel GetCoopAreaLayoutFFA() => new CoopAreaLayoutModel(new CoopAreaModel[] {
             GetCoopAreaFFA()
-        }, AreaLayoutType.FREE_FOR_ALL, new CoopAreaWhiteLineModel[0]);
+        }, AreaLayoutType.FREE_FOR_ALL);
 
         private static CoopAreaModel GetCoopAreaFFA() {
             List<Vector2> initArea = new List<Vector2>();

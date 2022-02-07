@@ -140,6 +140,7 @@ namespace HelpfulAdditions {
             txt.text = text;
             Image image = GetExtraSettingsPanelIcon(panel);
             SetImage(image, icon);
+            panel.GetComponent<SolidShadow>().enabled = false;
 
             RectTransform parentRect = parent.GetComponentInChildren<RectTransform>();
             parentRect.sizeDelta += new Vector2(0, panel.GetComponent<LayoutElement>().preferredHeight);
