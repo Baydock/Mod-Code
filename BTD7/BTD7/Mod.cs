@@ -25,7 +25,7 @@ namespace BTD7 {
             Logger = LoggerInstance;
         }
 
-        private static string[] bloonsGames = new string[] { "btd1", "btd2", "btd3", "btd4", "btd6" };
+        private static string[] bloonsGames = new string[] { "btd1", "btd2", "btd3", "btd4" };
 
         [HarmonyPatch(typeof(TitleScreen), nameof(TitleScreen.OnPlayButtonClicked))]
         [HarmonyPrefix]
@@ -33,9 +33,6 @@ namespace BTD7 {
             Random r = new Random();
 
             string bloonsGame = bloonsGames[r.Next(0, bloonsGames.Length)];
-
-            if (bloonsGame.Equals("btd6"))
-                return true;
 
             if (bloonsGame.Equals("btd4"))
                 bloonsGame = r.Next(2) == 0 ? "btd4" : "btd4e";
