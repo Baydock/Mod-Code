@@ -6,13 +6,14 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.6.4", "Baydock")]
+[assembly: MelonInfo(typeof(HelpfulAdditions.Mod), "Helpful Additions", "1.7.0", "Baydock")]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
 
 namespace HelpfulAdditions {
     [HarmonyPatch]
     public partial class Mod : MelonMod {
         private static MelonLogger.Instance Logger;
+        private static readonly System.Random Random = new System.Random();
 
         public override void OnApplicationStart() {
             Logger = LoggerInstance;
