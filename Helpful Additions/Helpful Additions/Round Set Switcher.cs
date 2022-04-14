@@ -21,7 +21,7 @@ namespace HelpfulAdditions {
         private static readonly int SwitcherCodeLength = SwitcherCode.Length;
         private static readonly List<DebugValueScreen> switcherPopups = new List<DebugValueScreen>();
 
-        private static bool RoundSetSwitcherEnabled() => Settings.Default.roundSetSwitcher && InGame.instance.IsSandbox;
+        private static bool RoundSetSwitcherEnabled() => Settings.Default.roundSetSwitcher && (InGame.instance?.IsSandbox ?? false);
 
         [HarmonyPatch(typeof(MainHudRightAlign), nameof(MainHudRightAlign.Initialise))]
         [HarmonyPostfix]
@@ -45,6 +45,8 @@ namespace HelpfulAdditions {
                     RoundSetSwitcherButton = null;
                 }
                 RoundSetSwitcherButton = roundSetSwitcherButton;
+
+                __instance.extraUIAnchor.localPosition -= new Vector3(RoundSetSwitcherButton.GetComponent<RectTransform>().sizeDelta.x + RoundButtonPadding, 0);
             }
         }
 
@@ -56,7 +58,7 @@ namespace HelpfulAdditions {
                 RectTransform rect = RoundSetSwitcherButton.GetComponent<RectTransform>();
                 float roundWidth = MainHudRightAlign.instance.roundButton.GetComponent<NK_TextMeshProUGUI>().renderedWidth;
                 float titleWidth = MainHudRightAlign.instance.panel.transform.Find("Title").GetComponent<NK_TextMeshProUGUI>().renderedWidth;
-                float padding = 30;
+                float padding = RoundButtonPadding;
                 float roundInfoButtonWidth = 0;
                 if (!(RoundInfoButton is null)) {
                     roundInfoButtonWidth = RoundInfoButton.GetComponent<RectTransform>().sizeDelta.x;
@@ -124,11 +126,11 @@ namespace HelpfulAdditions {
                 dropdown.name = SwitcherCode;
                 List<string> names = new List<string>();
                 foreach (string name in InGame.Bridge.Model.roundSetsByName.Keys) {
-					string displayName = LocalizationManager.Instance.GetText(name);
+                    string displayName = LocalizationManager.Instance.GetText(name);
                     displayName = Regex.Replace(displayName, "roundset", "", RegexOptions.IgnoreCase);
                     names.Add(displayName);
                     dropdown.options.Add(new TMP_Dropdown.OptionData(displayName));
-				}
+                }
                 inputObject.transform.parent = oldParent;
                 RectTransform inputRect = inputObject.GetComponent<RectTransform>();
                 inputRect.localScale = Vector3.one;

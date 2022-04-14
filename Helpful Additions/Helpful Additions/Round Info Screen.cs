@@ -30,6 +30,7 @@ namespace HelpfulAdditions {
         private const float RoundInfoScale = 1.5f;
         private const float RoundInfoSpacing = 50;
         private const float RoundInfoFontSize = 50;
+        private const float RoundButtonPadding = 30;
 
         private static readonly Color RoundInfoStartingColor = new Color(1, 1, 1, 0);
 
@@ -52,6 +53,8 @@ namespace HelpfulAdditions {
                     RoundInfoButton = null;
                 }
                 RoundInfoButton = roundInfoButton;
+
+                __instance.extraUIAnchor.localPosition -= new Vector3(RoundInfoButton.GetComponent<RectTransform>().sizeDelta.x + RoundButtonPadding, 0);
             }
         }
 
@@ -63,8 +66,7 @@ namespace HelpfulAdditions {
                 RectTransform rect = RoundInfoButton.GetComponent<RectTransform>();
                 float roundWidth = MainHudRightAlign.instance.roundButton.GetComponent<NK_TextMeshProUGUI>().renderedWidth;
                 float titleWidth = MainHudRightAlign.instance.panel.transform.Find("Title").GetComponent<NK_TextMeshProUGUI>().renderedWidth;
-                const float padding = 30;
-                float partial = rect.sizeDelta.x + padding;
+                float partial = rect.sizeDelta.x + RoundButtonPadding;
                 float min = titleWidth + partial;
                 float x = roundWidth + partial;
                 rect.localPosition = new Vector3(-(min > x ? min : x), 0);
